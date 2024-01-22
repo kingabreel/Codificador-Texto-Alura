@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Light-blue-light-blue-100, #F3F5FC);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.alura-logo {
+    margin: 40px;
+}
+
+textarea {
+    width: 680px;
+    border: none;
+    padding: 15px;
+    margin-top: -10px;
+    color: var(--Dark-blue-dark-blue-300, #0A3871);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border-radius: 5px;
+    resize: none;
+    height: 280px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.saida-texto {
+    background-color: #fff;
+    width: 400px;
+    height: 944px;
+    margin-top: -50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aviso {
+    display: flex;
+}
+
+.rodape_container {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.rodape_container > p {
+    color: var(--Gray-gray-400, #495057);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.rodape_container > .botoes {
+    display: flex;
+    gap: 24px;
+}
+.cript-btn, .decript-btn {
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+.cript-btn {
+    background: var(--Dark-blue-dark-blue-300, #0A3871);
+    color: #fff;
+}
+
+.decript-btn {
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+button:hover {
+    cursor: pointer;
+}
