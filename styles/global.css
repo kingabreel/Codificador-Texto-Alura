@@ -41,11 +41,12 @@ textarea:focus {
 .saida-texto {
     background-color: #fff;
     width: 400px;
-    height: 944px;
+    height: 774px;
     margin-top: -50px;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .aviso {
@@ -53,7 +54,7 @@ textarea:focus {
 }
 
 .rodape_container {
-    margin: 16px 0;
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
     gap: 16px;
