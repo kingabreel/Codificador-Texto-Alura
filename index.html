@@ -36,22 +36,24 @@
                 </div>
         
                 <div class="botoes">
-                    <button class="cript-btn">Criptografar</button>
-                    <button class="decript-btn">Descriptografar</button>
+                    <button class="cript-btn" onclick="criptografar()">Criptografar</button>
+                    <button class="decript-btn" onclick="descriptografar()">Descriptografar</button>
                 </div>
             </div>
         </div>
     
-        <div class="saida-texto">
-            <p class="saida"></p>
+        <div class="saida-texto" id="div-saida">
+            <p id="saida"></p>
 
-            <img src="#" class="imagem_saida-sem-texto" id="saida-imagem">
+            <img src="assets/TextNotFound.png" class="imagem_saida-sem-texto" id="saida-imagem">
     
-            <h1 class="titulo_saida-sem-texto"></h1>
+            <h1 id="titulo_saida-sem-texto"></h1>
     
-            <p class="paragrafo_saida-sem-texto"></p>
+            <p id="paragrafo_saida-sem-texto"></p>
         </div>    
     </main>
 
 </body>
+
+<script src="js/script.js"></script>
 </html>
