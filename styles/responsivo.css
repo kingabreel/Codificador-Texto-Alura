@@ -1,13 +1,74 @@
-@media (max-width: 320px){
+@media (max-width: 365px){
+    main{
+        flex-direction: column;
+    }
+    textarea {
+        width: 305px;
+        margin-left: 30px;
+    }
+    .rodape_container {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .rodape_container > .aviso {
+        margin-left: 20px;
+    }
+    .rodape_container > .botoes {
+        flex-direction: column;
+    }
     
+    .botoes > button {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .copy-btn {
+        display: none;
+    }
+    
+    .saida-texto {
+        width: 305px;
+        height: 187px;
+        margin-left: 30px;
+    }
+    .saida-texto  > img{
+        display: none;
+    }
+    #saida {
+        top: 0;
+    }
 }
 
-@media (max-width: 480px){
-    
-}
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+        width: 760px;
+    }
+    textarea {
+        width: 700px;
+        margin: 0 30px 0 30px;
+    }
 
-@media (max-width: 720px){
-    
+    .rodape_container {
+        width: 90%;
+        margin: 10% 0 0 5%;
+    }
+    .saida-texto  > img{
+        display: none;
+    }
+    .copy-btn {
+        display: none;
+    }
+    .botoes > button {
+        width: 332px;
+    }
+    .saida-texto {
+        width: 700px;
+        height: 117px;
+        margin-left: 30px;
+    }
+    #saida {
+        top: 0;
+    }
 }
 
 @media (max-width: 900px){

@@ -113,7 +113,7 @@ textarea:focus {
     display: flex;
     gap: 24px;
 }
-.cript-btn, .decript-btn {
+.cript-btn, .decript-btn, .copy-btn {
     width: 328px;
     padding: 24px;
     border-radius: 24px;
@@ -130,7 +130,7 @@ textarea:focus {
     color: #fff;
 }
 
-.decript-btn {
+.decript-btn, .copy-btn {
     border-radius: 24px;
     border: 1px solid #0A3871;
     color: #0A3871;
@@ -138,4 +138,9 @@ textarea:focus {
 
 button:hover {
     cursor: pointer;
+}
+
+.copy-btn {
+    position:absolute;
+    bottom: 89px;
 }

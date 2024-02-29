@@ -64,3 +64,19 @@ function descriptografarTexto(textoCriptografado) {
 
     return textoOriginal;
 }
+
+function copiarTexto() {
+    var elemento = document.getElementById("saida");
+
+    var areaDeSelecao = document.createElement("textarea");
+
+    areaDeSelecao.value = elemento.textContent;
+
+    document.body.appendChild(areaDeSelecao);
+
+    areaDeSelecao.select();
+
+    document.execCommand('copy');
+
+    document.body.removeChild(areaDeSelecao);
+}
