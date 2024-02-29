@@ -9,6 +9,7 @@ let img = document.getElementById("saida-imagem");
 
 function criptografar() {
     let textoOriginal = inputElement.value;
+    let copyBtn = document.querySelector(".copy-btn");
 
     if (textoOriginal === "") {
         divpai.appendChild(img);
@@ -18,28 +19,48 @@ function criptografar() {
         titulo.innerHTML = "Nenhuma mensagem encontrada";
         paragrafo.innerHTML = "Digite um texto que você deseja criptografar.";
         outputElement.innerHTML = "";
-    } else {
+
+        copyBtn.style.display = "none";
+
+    } else { 
+        if (divpai.contains(titulo)) {
+            divpai.removeChild(titulo);
+            divpai.removeChild(paragrafo);
+            divpai.removeChild(img);
+        }
         let textoCriptografado = criptografarTexto(textoOriginal);
-        divpai.removeChild(titulo);
-        divpai.removeChild(paragrafo);
-        divpai.removeChild(img);
+
         outputElement.innerHTML = textoCriptografado;
+
+        copyBtn.style.display = "block";
+
     }
 }
 
 function descriptografar() {
     let textoCriptografado = inputElement.value;
+    let copyBtn = document.querySelector(".copy-btn");
 
     if (textoCriptografado === "") {
+        divpai.appendChild(img);
+        divpai.appendChild(titulo);
+        divpai.appendChild(paragrafo);
+
         titulo.innerHTML = "Nenhuma mensagem encontrada";
         paragrafo.innerHTML = "Digite um texto que você deseja descriptografar.";
         outputElement.innerHTML = "";
+        copyBtn.style.display = "none";
     } else {
-        let textoOriginal = descriptografarTexto(textoCriptografado);
+        let textoDecCriptografado = descriptografarTexto(textoCriptografado);
         
-        titulo.innerHTML = "Texto Descriptografado";
-        paragrafo.innerHTML = "Texto criptografado: " + textoCriptografado;
-        outputElement.innerHTML = textoOriginal;
+        outputElement.innerHTML = textoDecCriptografado;
+
+        if (divpai.contains(titulo)) {
+            divpai.removeChild(titulo);
+            divpai.removeChild(paragrafo);
+            divpai.removeChild(img);
+        }
+        copyBtn.style.display = "block";
     }
 }
 

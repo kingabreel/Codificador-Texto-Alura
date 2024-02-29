@@ -143,4 +143,5 @@ button:hover {
 .copy-btn {
     position:absolute;
     bottom: 89px;
+    display: none;
 }
